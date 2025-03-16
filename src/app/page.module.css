@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 375px;
+  background: radial-gradient(circle at center, #1b0f26, #090414);
+  color: white;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+}
+
+.hola {
+  position: relative;
+  bottom: 25%;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.notificationIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle at center, #2a123b, #0d0715);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 30px rgba(138, 43, 226, 0.5);
+}
+
+.notificationIcon::before,
+.notificationIcon::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(138, 43, 226, 0.2);
+}
+
+.notificationIcon::before {
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgba(138, 43, 226, 0.3);
+}
+
+.notificationIcon::after {
+  width: 240px;
+  height: 240px;
+  border: 2px solid rgba(138, 43, 226, 0.1);
+}
+
+.notificationIcon img {
+  width: 80px;
+  filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.6));
+}
+
+.notificationText {
+  position: relative;
+  top: 18%;
+  line-height: 1.8;
+}
+
+.notificationText h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.notificationText p {
+  font-size: 0.9rem;
+  color: #bba3e2;
+}
+
+.notifyBtn {
+  position: relative;
+  padding: 14px 24px;
+  font-size: 1rem;
+  background: rgba(122, 90, 219, 0.2);
+  border: 2px solid #6434ce;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  top: 27%;
+  width: 300px;
+  box-shadow: 0px 1px 2px 0px #0000001f;
+}
+
+.notifyBtn:hover {
+  background: rgba(122, 90, 219, 0.2);
+  border-color: #bba3e2;
+}
+
+@media screen and (max-width: 431px) {
+  .notificationIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .notificationIcon::before {
+    width: 160px;
+    height: 160px;
+  }
+
+  .notificationIcon::after {
+    width: 200px;
+    height: 200px;
+  }
+}
