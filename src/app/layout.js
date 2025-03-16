@@ -1,7 +1,7 @@
 import ServiceWorkerRegister from "import/components/ServiceWorkerRegister";
 import "./globals.css";
 export const metadata = {
-  title: "Vimal Anand",
+  title: "Shankar Kumar Nanda",
   description: "DiGiLABS assignment",
   manifest: "/manifest.json",
 };
